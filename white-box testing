@@ -1,0 +1,31 @@
+white-box testing
+` Structure of the code
+black-box testing
+` looks at the interface of the code (functionality of the code)
+
+white-box testing
+` dervies coverage meterics that represent different levels of test effort
+black-box testing
+` deal with equivalence partitions and boundary-value analysis
+
+white-box testing - how the program is written and structured
+` statement coverage
+` condition coverage
+` Decision or Branch coverage
+` MC/DC coverage
+
+Statement coverage (weakest)
+- Each statement in executed at least once by some test
+
+Condition coverage (weak)
+- Every condidtion in a decision in the program has excuseted 
+- Testing for the if / while / else 
+
+Decision or Branch coverage
+- every point of entery and exit in the program is tested 
+- everything dicsion in the program also is tested
+
+Test1  F || F
+Test2  T || F
+Test3  F || T 
+JaCOCO
