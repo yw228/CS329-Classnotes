@@ -1,0 +1,26 @@
+mocking- unit test
+
+problem 
+need to have the database up a running to perform any testing
+
+remove the need database and mock the database by hard-coding interactions 
+
+database - api 
+
+mockito - you can mock only part of the object
+
+Use mockito to create mock CFGs
+Use mockito verify interface in tests 
+
+
+control flow graph 
+what CFG shapes that are interesitng 
+only test inn interesting shape
+1. Sequential
+2. Merging 
+3. Branching
+4. Looping
+
+
+
+

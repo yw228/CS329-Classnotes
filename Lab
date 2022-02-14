@@ -1,0 +1,54 @@
+Should write not more than 30 Tests
+
+
+Change dump code into something constant folding
+Folding constant  
+Type checker
+
+AST Tree
+DOM viewer
+IBM Javadoc 
+
+
+Constant folding 
+Final int a = 8*128 -> Final int a = 1028
+
+
+1. Literals in Parenthesis
+2. Logical not applied to boolean literal(only when boolean)
+3. Addition with number literals 
+4. Less than with Number literals
+5. If statement with boolean literals 
+	
+
+Constant folding
+1. Write spec
+2. Black box test
+3. Implement foding it visitor class
+4. Add the new folding class to ConstantFolding
+
+if (15 < 3) // 2 and 4  // change to false in AST TREES
+{
+   x = 10;
+} 
+else      // delete the if left with the bottom parts
+{
+x = 5 + 6 +7 ; // 3  x = 18 final folded code 
+}
+
+fixed point algo
+repeating 
+
+
+
+control flow 
+- order of statements are executed
+
+Program analysis
+- reaching definititons 
+
+
+
+
+
+

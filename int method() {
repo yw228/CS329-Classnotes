@@ -1,0 +1,14 @@
+int method() {
+	return ((3)) + (1);
+}
+
+constant folding: Parenthesis expression 
+
+
+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
+
+
+
+Test case 
+for prefix 
+check for ++x or --, we should only have !
