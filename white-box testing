@@ -4,7 +4,7 @@ black-box testing
 ` looks at the interface of the code (functionality of the code)
 
 white-box testing
-` dervies coverage meterics that represent different levels of test effort
+` derives coverage metrics that represent different levels of the test effort
 black-box testing
 ` deal with equivalence partitions and boundary-value analysis
 
@@ -15,17 +15,67 @@ white-box testing - how the program is written and structured
 ` MC/DC coverage
 
 Statement coverage (weakest)
-- Each statement in executed at least once by some test
+- Each statement is executed at least once by some test
 
 Condition coverage (weak)
-- Every condidtion in a decision in the program has excuseted 
+- Every condition in a decision in the program has been executed 
 - Testing for the if / while / else 
 
 Decision or Branch coverage
-- every point of entery and exit in the program is tested 
-- everything dicsion in the program also is tested
+- every point of entry and exit in the program is tested 
+- everything decision in the program also is tested
 
 Test1  F || F
 Test2  T || F
 Test3  F || T 
 JaCOCO
+
+
+
+CS329 whitebox testing part 2
+MC/DC coverage (Strongest)
+1. every entry point and exit it has been invoked at least once by test
+2. every condition in a decision in the program has taken all possible outcomes at least once by a test
+3. Each condition has been shown to afftect that decision outcome independently by a test (critial system)
+
+In order to meet MC/DC for code with n conidtions, we will need at least n + 1 tests
+
+public static int f1(int a , int b)
+{
+	if ((3>a) || (b!=0))
+	{
+	return 1;
+	} else {
+	return 0;
+	}
+}
+
+MC/DC:
+1. Determine the coniditions of a decsion
+2. Create Truth table
+3. Add rows to the truth table where a conditions determines the decisions (need to have constant prefixes)
+
+
+A,B,Decision
+` show how b can affect the decision
+F,F,F 
+F,T,T
+` show how a can affect the decision
+T,*,T  only look at a, * we don't care about the B
+
+if only one or two conitions MC/DC is same as Decision or Branch coverage
+only differnt when there are three or more
+like ((a||b) && c)
+
+A,B,C,Decision
+T,F,T,T
+F,T,F,F
+F,F,F,F
+
+MC/DC
+A,B,C,Decision
+T,*,T,T
+T,*,F,F
+F,T,T,T
+F,F,*,F
+
