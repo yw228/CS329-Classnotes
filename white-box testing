@@ -74,8 +74,8 @@ F,F,F,F
 
 MC/DC
 A,B,C,Decision
-T,*,T,T
-T,*,F,F
-F,T,T,T
-F,F,*,F
+T,*,T,T A-C
+T,*,F,F C
+F,T,T,T B
+F,F,*,F A-B
 

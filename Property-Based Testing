@@ -1,0 +1,45 @@
+Property-Based Testing
+Types
+1. Stateless
+2. Stateful
+
+Stateless
+1. Generate random input
+2. Test output(based on properties)
+   ` Assert properties of the specification
+   ` Check for exceptions
+   ` Matches the golden standard or oracle   -  An implementation that we either know or beliveve to be correct
+? why just use the gold standard ?
+It often is in a different programming language, is inefficient, or doesn't consider security 
+
+   ` Check any algebraic properties - Algebra is just a set of values and a set of operations
+
+example
+sort,reverse
+
+sort(reverse(sort(array)))
+should be equal to sort(array)
+
+
+Stateful testing
+` useful with data structures or collections
+` golden standard is essential
+
+1. Generate random program 
+   ` Call a random number of random methods on object
+2. Test object (based on properties)
+   `Check for exceptions
+   `Make sure output matches "golden standard"
+   `CHeck any algebraic properties 
+
+
+ Testing Equivlence with oracle 
+ `slides 
+
+ Testing algebraic properties (without oracle)
+ ` run the random program on two instances or our implementation
+ 1. run random prefix(same as shown earlier)
+ 2. Test Algrbraic property
+ 3. Run random postifx
+ 4. Check that instances are equal
+ 
