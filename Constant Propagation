@@ -1,0 +1,40 @@
+Constant Propagation
+` Integration Tests
+` Continuous Integration
+` Constant Propagation
+
+Integration Tests
+` Test code that Integrates multiple parts of the system
+` Takes longer to run than Unit Tests, we often split them into their folder
+Maven Test
+`Test phase
+`Integration-test
+Test failed
+Integration will not run
+
+
+Continuous Intergration (CI)
+` The practices of automating intertation and testing of code changes from multiple contributors
+
+` Jenkins
+` Github Hooks
+
+Constant Propagration
+Fixed-Point Algorithm: repeat until the AST changed
+1. Constant folding
+2. Construct the control flow graph
+3. Perfom reaching definitions
+4. Propagation : 
+
+
+
+
+int x  = 13 ;  S1
+if (x < 12){}    (x,s1)
+
+
+
+
+Testing for project 1 part 3
+Write Integration Test for the entire constant propagation algorithm
+`
