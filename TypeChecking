@@ -1,0 +1,53 @@
+Type Checking Manual Verfifcation
+` Testing the test
+
+
+
+` DynamicTest for proofing type check
+
+ example 
+
+      int y = true  not type safe
+
+ lookup identifier => it should not run error return true
+
+ regression test
+ 
+ rerunning all the test after a change to the software is made from a bug fix or new feature
+
+ very import to know you didn't break something that use to work
+
+ help with maintenance   often connect with CI/CD
+
+ How do we know if our test suites is any good?
+ `whitebox test 
+ `random generation
+ ` mutation analysis
+
+
+ mutation analysis
+ modifying the source code in specific ways and ehcking to see if at least one test failes
+ ` Mutants 
+    `Each modification to the sources code is called a mutant
+    ` if test suit failed when run on mutant, the mutant is killed
+
+    	Pit - pitest 
+    	`Conditiionals Boundary
+    	`Increments
+    	`Invert Negatives
+    	`Math
+    	` Negate conitionals
+    	` Return Values
+    	` Void Method Calls
+    	` Empty returns
+    	` False returns
+    	` True returns
+    	` Null returns
+
+   Pros
+       ` Helps find missing tests
+       ` Helps provide higher confidence in test suites
+
+   Cons 
+       ` Often many false positives
+       ` Highly configurable, takes times to understand options
