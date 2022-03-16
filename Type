@@ -1,0 +1,55 @@
+Type Checking.pptx
+
+Static Type Safety
+Environment
+Type checking:proof
+
+Static Type Safety - proves type safety in all cases
+` Same type safe problem may be excluded
+`` Dead code with static type violations
+`` Dynamic type safe code 
+   - Depending on the language, Compilers and Interpreters give limited type safety guarantees
+   - They often give warning for code that violates type safety, but sometimes not
+   - Sometimes perform unsafe dafault casting
+
+
+
+   public Integar pop(){
+    Integar top == null;
+    if (size > 0 ) {
+     top = elements[ --size ];
+    }
+    return top;
+   }
+
+   What is the type of size ?
+   What is elements type ? compatiable with [] ?
+   
+   
+
+  we are lookup the types of variables, parameters and method returns
+
+  void f(int x) {
+    int y = 2;
+    if (x < y) {
+        y = y + 1;
+    } else {
+        y = 0;  // here
+    }
+  }
+
+
+  here <------   E|- y : tau
+  				 E|- 0 : sigma
+  				 tau := sigma 
+
+  				 tau: int 
+  				 sigma : int
+  				 It is ture
+
+  Type checking : proof 
+
+
+In order to prove a method is statically type safe, 
+we must prove every statement in the method is statically type safe
+
