@@ -1,0 +1,29 @@
+ASP 
+workstream data 
+
+
+CRM 
+
+two areas
+` access CRM and ASP 
+
+` workday - data migration
+
+sign to lnclusion and document it 
+
+datasheet
+
+DSR
+data string request
+
+
+
+
+2. `Workday integration 
+   `Reporting 
+
+
+   live data - core/ transactional
+   hisorical data - non-transactional/static
+   data archiving - data retention policies
+ 

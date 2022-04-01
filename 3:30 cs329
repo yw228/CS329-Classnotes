@@ -1,0 +1,24 @@
+3/30 cs329
+4 leaf node can not kill 
+` Dafny Contracts
+` Weakest Precondition Calculus
+` WP proofs 
+
+Weakest precondition
+1. Assuming Q is true after S
+
+
+smallest amount to requires 
+to prove p -> wp(S,Q)
+
+{P} S {Q} instead -> Strongest postcondition   <- we use Weakest postcondition
+
+
+
+requires ?? // P
+ensures ?? // Q
+{??} x:=3 {??}   -> {??} x:=3 {x==3}   ->   Weakest {true} x:=3 {x==3}  Strongest 
+
+ //requires          // ensure
+{ i < i+1 } x:= i , x:=x+1 { i < x }
+-> { true } x:= i , x:=x+1 { i < x }
